@@ -1329,9 +1329,9 @@ namespace exercises
     {
         public static void Main(string[] args)
         {
-            Console.Write("Enter your number: ");
+            Console.Write("Enter your numberr: ");
             int firstInput = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter your second: ");
+            Console.Write("Enter your secondd: ");
             int secondInput = Convert.ToInt32(Console.ReadLine());
             if (firstInput < 100 && secondInput > 200)
             {
