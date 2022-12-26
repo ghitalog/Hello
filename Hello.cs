@@ -7,6 +7,7 @@
 //    public static int array_adjacent_elements_product(int[] input_array)
 //    {
 //        int array_index = 0;
+
 //        int product = input_array[array_index] * input_array[array_index + 1]; // 6
 
 //        array_index++; // este ++ pentru ca calculam urmatorul product / adica pe 2 il lasam in spate si mergem la 4.
@@ -50,10 +51,10 @@
 //            Console.WriteLine("Orginal string: " + text);
 //            Console.WriteLine("After removing all the vowels from the said string: " + test(text));
 //            text = "C Sharp";
-//            Console.WriteLine("\nOrginal string: " + text);
+//            Console.WriteLine("Orginal string: " + text);
 //            Console.WriteLine("After removing all the vowels from the said string: " + test(text));
 //            text = "JavaScript";
-//            Console.WriteLine("\nOrginal string: " + text);
+//            Console.WriteLine("Orginal string: " + text);
 //            Console.WriteLine("After removing all the vowels from the said string: " + test(text));
 //            Console.WriteLine(text);
 //        }
@@ -61,9 +62,9 @@
 //        public static string test(string text)
 //        {
 
-//            //return new Regex(@"[aeiouAEIOU]").Replace(text, "");
-//            // return Regex.Replace(text, @"[aeiouAEIOU]", "");
-//            return text.Select((x, i) => i).Where(i => char.ToLower(text[i]).ToArray());
+//            return new Regex(@"[aeiouAEIOU]").Replace(text, "");
+//            return Regex.Replace(text, @"[aeiouAEIOU]", "");
+//           // return text.Select((x, i) => i).Where(i => char.ToLower(text[i]).ToArray());
 //        }
 //    }
 //}
@@ -193,6 +194,11 @@
 //        }
 //    }
 //}
+
+
+
+
+
 
 
 
@@ -1119,7 +1125,7 @@
 //using System;
 //using System.Collections.Generic;
 //using System.Diagnostics.CodeAnalysis;
-//using System.Text;
+//using System.Text;323
 //namespace victor
 //{
 //    class dog
@@ -1184,38 +1190,6 @@
 
 
 
-//namespace stopHam
-//{
-//    class Program123
-//    {
-//        static void Main(string[] args)
-//        {
-//            Console.WriteLine(ToBeZInside("mazzarate"));
-//            Console.WriteLine(ToBeZInside("zarina"));
-//            Console.WriteLine(ToBeZInside("zzaia"));
-//            Console.WriteLine(ToBeZInside("zoiaz"));
-//            Console.ReadLine();
-
-//        }
-//        public static bool ToBeZInside(string input)
-//        {
-//            int i = 0;
-//            char[] myLetters = input.ToCharArray();
-//            foreach (char item in myLetters)
-//            {
-//                if (Char.ToUpper(item) == 'Z')
-//                {
-//                    i++;
-//                }
-//            }
-//            if (i >= 2 && i <= 4)
-//            {
-//                return true;
-//            }
-//            return false;
-//        }
-//    }
-//}
 
 
 
@@ -1316,33 +1290,73 @@
 //            int temp = arr[0]; // temp 1
 //            arr[0] = arr[arr.Length - 1];// arr[0] = 77
 //             arr[arr.Length - 1] = temp; //77
-
+//            temp = arr[arr.Length - 1];
 //            return arr;
 //        }
 //    }
 //}
 
-using System;
-namespace exercises
-{
-    class programing23
-    {
-        public static void Main(string[] args)
-        {
-            Console.Write("Enter your numberr: ");
-            int firstInput = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter your secondd: ");
-            int secondInput = Convert.ToInt32(Console.ReadLine());
-            if (firstInput < 100 && secondInput > 200)
-            {
-                Console.WriteLine("True");
-            }
-            else
-            {
-                Console.WriteLine("False");
-            }
-            
-        }
-       
-    }
-}
+//using System;
+//namespace exercises
+//{
+//    class programing23
+//    {
+//        public static void Main(string[] args)
+//        {
+//            Console.Write("Enter your numberr: ");
+//            int firstInput = Convert.ToInt32(Console.ReadLine());
+//            Console.Write("Enter your secondd: ");
+//            int secondInput = Convert.ToInt32(Console.ReadLine());
+//            if (firstInput < 100 && secondInput > 200)
+//            {
+//                Console.WriteLine("True");
+//            }
+//            else
+//            {
+//                Console.WriteLine("False");
+//            }
+
+//        }
+
+//    }
+//}
+
+
+
+
+//using System;
+//using System.Collections.Generic;
+//using System.Data.SqlTypes;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+
+//namespace Number_Guessing
+//{
+//    class Program3123
+//    {
+
+//        static void Main(string[] args)
+//        {
+//            int[] item1 = takingTheMiddleTwoNumbersOFLengtEven(new[] { 1, 5, 7, 3 });
+//            Console.WriteLine("New array (el trebuie sa fie string mai intai ");
+
+//            foreach (int i in item1)
+//            {
+//                Console.Write(i.ToString() + " ");
+//            }
+//        }
+//        public static int[] takingTheMiddleTwoNumbersOFLengtEven(int[] x)
+//        {
+//            {
+//                int first = x[0]; // first = 1   
+//                x[0] = x[x.Length - 1]; // x[0] == 3
+//                x[x.Length - 1] = first; //first == 3
+//                return x; // return 
+//                //
+//            }
+
+//        }
+//    }
+//}
+
